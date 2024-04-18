@@ -1,0 +1,30 @@
+Javascript is a Highlevel, (asking computer to allot memory but in JS &python js will only do)
+prototype based,
+object oriented,
+multi paradigm,
+interpreted or just in time compiled , ()
+dynamic,
+single threaded,
+garbage collected, (js engine will remove garbage time to time)
+non bloclking event loop concurrency model 
+ 
+
+
+interpreted ->code will be converted to machine code and will be executed line by line(1 step)
+compiation->code will be converted to machine code and written to a binary file that can be executed(2 steps)
+
+
+Java script in just in time compiled as code will code converted and executed immediately
+Javascript Engine has 2 things.Call stack(where our code will be executed by using Execution Context) and heap memory(where variables will be saved)
+
+Javascript Engine does these things:
+1.Parsing the code and creating a Abstract Syntax Tree 
+2.Compiling this AST and compiles into Mahcine code
+3.THis machine code will be executed immediately.
+
+and we will get started with our application 
+But modern Javascript Engines like (V8) will get started with fairly unoptimized code and then recompiles and re execute So 2&3 steps will be repeating
+
+
+JavascriptRun time includes JS engine,Web APIS(like DOM,Fetch APi etc) and Call Back Queue(which is adding the functions into queue w.r.t user action like click etc)
+This call back Queue will be sent into Call Stack and will be executed by Event loop.
