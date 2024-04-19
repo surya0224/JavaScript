@@ -28,3 +28,25 @@ But modern Javascript Engines like (V8) will get started with fairly unoptimized
 
 JavascriptRun time includes JS engine,Web APIS(like DOM,Fetch APi etc) and Call Back Queue(which is adding the functions into queue w.r.t user action like click etc)
 This call back Queue will be sent into Call Stack and will be executed by Event loop.
+
+
+
+
+Javascript Call Stack:
+
+After comppliation js code will be executed in Call stack.
+Then a Global Execution Context will be created for all the top level code to be executed means all the code which is oustide the functions,fuctions will be declared but not executed.
+Execution Context is like a environemnt in which piece of Js will be executed.It contains all the info for the code to be executed.
+There is only one Global Execution Context in full JS code
+So once the top level code is finished function will be called for executed.
+for each function one execution context will be created.
+ALl the execution context make up the call stack
+Some functions will wait for event to happen so that it can be executed.
+
+
+
+What's inside Execution Context?
+it stores all the variable enviornment,let,const,var,funcitons,arguments,refreneces of arguments to a function(Scope chain) &this keyword
+these are generated in a phase called creation phase just before execution
+
+Arrow functions will not have their this keyword and arguments object but they can use it from their nearest parent funciton(more later)
