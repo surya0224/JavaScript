@@ -50,3 +50,16 @@ it stores all the variable enviornment,let,const,var,funcitons,arguments,refrene
 these are generated in a phase called creation phase just before execution
 
 Arrow functions will not have their this keyword and arguments object but they can use it from their nearest parent funciton(more later)
+
+
+**************************************************
+Hoisitng :Makes some types of variables accessible/usable in the code before they are actually declares."Variables lifted to the top of their scope"
+
+Beofre execution of code,code is scanned for variable declarations and for each variable,a new property is created in the variable enviornment object.
+is called Hoisitng.Hoisting works differently for diff types
+
+for function declartions hoisted and initial value will be actual function.thats why we can can use functions eventhough they are not orderd in line because all functions will be declared before hand of execution
+var hoisted and the inital value will be undefined and we will not get error but undefined if we try to access it before declaration
+let and const are not hoisted technically yes they are hoisted but in practice no as they will be created in the Temporal dead zone to unitialized value and you will get error if you try to access  beofre the declaration
+
+
