@@ -63,3 +63,10 @@ var hoisted and the inital value will be undefined and we will not get error but
 let and const are not hoisted technically yes they are hoisted but in practice no as they will be created in the Temporal dead zone to unitialized value and you will get error if you try to access  beofre the declaration
 
 
+
+******************************************************
+this 
+
+inside a regular function call this key word will  be undefined
+method this will be of the object
+
